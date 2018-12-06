@@ -5,6 +5,7 @@ import { HttpResponse } from "tns-core-modules/http/http";
 import { TnsOaProvider, TnsOaProviderType } from "./providers";
 
 export declare interface ITnsOAuthTokenResult {
+  idToken?: string;
   accessToken: string;
   refreshToken: string;
   accessTokenExpiration: Date;
