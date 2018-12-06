@@ -37,7 +37,7 @@ export interface TnsOaProvider {
 
   getAuthUrlStr?(): string;
   getAccessTokenUrlWithCodeStr?(authCode: string): string;
-  parseTokenResult(jsonData): ITnsOAuthTokenResult;
+  parseTokenResult(jsonData, response?): ITnsOAuthTokenResult;
 }
 
 export declare type ProviderTypeFacebook = "facebook";

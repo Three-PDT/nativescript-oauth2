@@ -117,7 +117,7 @@ export class TnsOAuthLoginSubController {
       ) => {
         if (!responseError) {
           if (response.statusCode === 200) {
-            const tokenResult = this.client.provider.parseTokenResult(data);
+            const tokenResult = this.client.provider.parseTokenResult(data, response);
 
             if (tokenResult && !responseError) {
               this.client.tokenResult = tokenResult;
